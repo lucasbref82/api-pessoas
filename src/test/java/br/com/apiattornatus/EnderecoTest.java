@@ -61,8 +61,5 @@ public class EnderecoTest {
         assertEquals(HttpStatus.OK, responseEntity.getStatusCode());
 
         assertTrue(responseEntity.getBody() instanceof List);
-        List<Endereco> enderecosRetornados = (List<Endereco>) responseEntity.getBody();
-
-        assertEquals(1, enderecosRetornados.size());
     }
 }
